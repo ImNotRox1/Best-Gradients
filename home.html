@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Gradients</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background: linear-gradient(45deg, #48dbfb, #ff9ff3);
+            background-size: 400% 400%;
+            animation: gradientAnimation 20s ease-in-out infinite;
+            color: #333;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @keyframes gradientAnimation {
+            0% {background-position: 0% 50%;}
+            25% {background-position: 100% 50%;}
+            50% {background-position: 100% 100%;}
+            75% {background-position: 0% 100%;}
+            100% {background-position: 0% 50%;}
+        }
+
+        h1 {
+            color: #ffffff;
+            font-size: 3em;
+            font-weight: bold;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            max-width: 600px;
+            text-align: center;
+            line-height: 1.6;
+            color: #ffffff;
+            font-size: 1.2em;
+            font-weight: bold;
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            transition: box-shadow 0.3s ease;
+        }
+
+        p:hover {
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+        }
+
+        .botao {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .botao:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+
+        .botao-superior-direito {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+        }
+
+        .botao-grande {
+            font-size: 1.2em;
+            padding: 15px 30px;
+        }
+
+        .texto-inferior {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: #ffffff;
+            font-size: 1em;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <button class="botao botao-superior-direito" onclick="voltarParaInicio()">Home</button>
+    <h1>Best Gradients</h1>
+    <p>Bem-vindo ao melhor site de gradientes da internet. Aqui você encontrará os gradientes mais bonitos que existem no mundo.</p>
+    <button class="botao botao-grande" onclick="mostrarGradients()">Ver Gradientes</button>
+    <div class="texto-inferior">Feito com ❤️ por x_x</div>
+
+    <script>
+        function mostrarGradients() {
+            window.location.href = 'GradientsPage/index.html';
+        }
+
+        function voltarParaInicio() {
+            window.location.href = 'index.html';
+        }
+    </script>
+</body>
+</html>
